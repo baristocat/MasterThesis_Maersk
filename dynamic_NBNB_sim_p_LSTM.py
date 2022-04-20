@@ -7,7 +7,7 @@ import torch.optim as optim
 from generate_synth_data import generate_synth_series
 
 N = 100 # number of samples
-L = 50 # length of each sample ie # of issue points/interarrivals
+L = 51 # length of each sample ie # of issue points/interarrivals
 
 #load generated data
 Q_list = []
