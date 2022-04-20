@@ -5,6 +5,11 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
+'''
+simple RNN-based NN model with two LSTM cells outputting point forecasts of an sine function
+
+'''
+
 N = 100 # number of samples
 L = 1000 # length of each sample
 T = 20 # width of wave

@@ -5,10 +5,16 @@ import statsmodels.api as sm
 from scipy.stats import norm
 warnings.filterwarnings('ignore')
 
-#simulating static NBNB data
-#parameterization is done through MLE
-
 '''
+function that generates synthetic data
+
+simulating dynamic NBNB data for interarrival times and demand sizes iid
+dynamics are introduced by changing p-values by an AR(1)-process - the n-parameters of the NB dist is constant
+
+input:
+   - amount of issue points and interarrival times
+   - the seed
+
 https://anton-granik.medium.com/fitting-and-visualizing-a-negative-binomial-distribution-in-python-3cc27fbc7ecf
 '''
 def p2mu(p_series , n):

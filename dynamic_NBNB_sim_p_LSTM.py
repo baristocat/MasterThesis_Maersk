@@ -5,6 +5,13 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from generate_synth_data import generate_synth_series
+'''
+experiment using simple RNN-based NN model to fit the NBNB synth data of demand sizes and interarrival times
+via probabilistic forecasting
+
+note: loss function needs to be defined
+
+'''
 
 N = 100 # number of samples
 L = 51 # length of each sample ie # of issue points/interarrivals

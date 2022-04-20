@@ -5,6 +5,12 @@ import torch
 import torch.nn as nn
 warnings.filterwarnings('ignore')
 
+'''
+simple RNN-based NN model with two LSTM cells outputting the mean and shape parameters of NB distributions
+through an log-sigmoid decoder
+
+'''
+
 class LSTMPredictor(nn.Module):
     def __init__(self, n_hidden=64):
         super(LSTMPredictor, self).__init__()
